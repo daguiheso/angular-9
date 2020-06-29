@@ -1,0 +1,11 @@
+<p>templates works!</p>
+
+<ng-container *ngIf="!isLogged; else logged">
+  <button>Registrase</button>
+  <button>Iniciar Sesión</button>
+</ng-container>
+
+<ng-template #logged>
+  <button>Administración</button>
+  <button>Perfil</button>
+</ng-template>
