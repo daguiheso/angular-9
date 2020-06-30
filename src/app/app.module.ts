@@ -13,6 +13,10 @@ import { HaloVehiclesComponent } from './components/halo-vehicles/halo-vehicles.
 import { HttpClientModule } from '@angular/common/http';
 import { FormsBasicComponent } from './components/forms-basic/forms-basic.component';
 import { MyDirectiveDirective } from './directives/my-directive.directive';
+import { TransformTextPipe } from './pipes/transform-text.pipe';
+import { SortPipe } from './pipes/sort.pipe';
+import { SortByPipe } from './pipes/sort-by.pipe';
+import { PipesComponent } from './components/pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +29,10 @@ import { MyDirectiveDirective } from './directives/my-directive.directive';
     HaloVehiclesComponent,
     FormsBasicComponent,
     MyDirectiveDirective,
+    TransformTextPipe,
+    SortPipe,
+    SortByPipe,
+    PipesComponent,
   ],
   imports: [
     BrowserModule,

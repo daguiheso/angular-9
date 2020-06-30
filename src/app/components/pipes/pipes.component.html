@@ -1,0 +1,18 @@
+<p>pipes works!</p>
+
+<h2>Pipe Simple (uppercase)</h2>
+<div>{{list[0].name | transformText}}</div>
+
+<h2>Pipe Normal (order)</h2>
+<ul>
+  <li *ngFor="let item of list | sort">
+    ID: {{item.id}} - Nombre: {{item.name}} - Price: {{item.price}}
+  </li>
+</ul>
+
+<h2>Pipe Hard (order with params)</h2>
+<ul>
+  <li *ngFor="let item of list | sortBy:0:2">
+    ID: {{item.id}} - Nombre: {{item.name}} - Price: {{item.price}}
+  </li>
+</ul>
