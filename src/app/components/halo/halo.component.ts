@@ -1,5 +1,5 @@
 import { Component, OnInit, SimpleChanges } from '@angular/core';
-import { HaloService } from '../../services/halo.service';
+import { HaloService } from '@services/halo.service';
 import { HaloVehicle } from '../../others/halo.interfaces';
 import { Observable } from 'rxjs';
 
