@@ -1,0 +1,24 @@
+<p>forms-basic works!</p>
+
+<form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">name</label>
+    <input type="text" formControlName="name" name="name" id="name">
+  </div>
+  <div>
+    <label for="user">user</label>
+    <input type="text" formControlName="user" name="user" id="user">
+  </div>
+  <div>
+    <label for="email">email</label>
+    <input type="email" formControlName="email" name="email" id="email">
+  </div>
+  <div *ngIf="signUpForm.get('email').hasError('email')">
+    <p>Error en correo</p>
+  </div>
+  <div>
+    <label for="password">password</label>
+    <input type="password" formControlName="password" name="password" id="password">
+  </div>
+  <button [disabled]="signUpForm.invalid" type="submit">Registrarse</button>
+</form>

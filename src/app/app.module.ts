@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './components/app/app-routing.module';
 import { AppComponent } from './components/app/app.component';
@@ -11,6 +11,7 @@ import { AttributesEventsAndNgModelComponent } from './components/attributes-eve
 import { HaloComponent } from './components/halo/halo.component';
 import { HaloVehiclesComponent } from './components/halo-vehicles/halo-vehicles.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsBasicComponent } from './components/forms-basic/forms-basic.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +22,14 @@ import { HttpClientModule } from '@angular/common/http';
     AttributesEventsAndNgModelComponent,
     HaloComponent,
     HaloVehiclesComponent,
+    FormsBasicComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
