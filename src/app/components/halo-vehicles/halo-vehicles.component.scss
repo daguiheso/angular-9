@@ -1,0 +1,24 @@
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__item {
+    border: 1px solid #efefef;
+    border-radius: 6px;
+    padding: 20px;
+    width: 24%;
+    text-align: center;
+  }
+  &__description {
+
+  }
+  &__title {
+    font-weight: bold;
+  }
+  &__img {
+    max-width: 100%;
+  }
+}

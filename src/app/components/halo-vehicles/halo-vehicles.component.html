@@ -1,0 +1,11 @@
+<p>halo-vehicles works!</p>
+<ul class="list">
+  <li class="list__item" *ngFor="let vehicle of data">
+    <h4 class="list__title">{{vehicle.name}}</h4>
+    <p class="list__text">{{vehicle.description}}</p>
+    <img class="list__img" [src]="vehicle.largeIconImageUrl" alt="">
+    <button (click)="selectVehicle(vehicle.name)">
+      Seleccionar
+    </button>
+  </li>
+</ul>

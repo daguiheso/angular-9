@@ -8,6 +8,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { TemplatesComponent } from './components/templates/templates.component';
 import { EnumAndCastingComponent } from './components/enum-and-casting/enum-and-casting.component';
 import { AttributesEventsAndNgModelComponent } from './components/attributes-events-and-ng-model/attributes-events-and-ng-model.component';
+import { HaloComponent } from './components/halo/halo.component';
+import { HaloVehiclesComponent } from './components/halo-vehicles/halo-vehicles.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { AttributesEventsAndNgModelComponent } from './components/attributes-eve
     TemplatesComponent,
     EnumAndCastingComponent,
     AttributesEventsAndNgModelComponent,
+    HaloComponent,
+    HaloVehiclesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

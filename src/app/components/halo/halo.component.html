@@ -1,0 +1,5 @@
+<div class="container">
+  <p>halo works!</p>
+  <app-halo-vehicles [data]="listVehicles$ | async" (selectedVehicle)="showAlert($event)"></app-halo-vehicles>
+</div>
+
