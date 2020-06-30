@@ -12,6 +12,7 @@ import { HaloComponent } from './components/halo/halo.component';
 import { HaloVehiclesComponent } from './components/halo-vehicles/halo-vehicles.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsBasicComponent } from './components/forms-basic/forms-basic.component';
+import { MyDirectiveDirective } from './directives/my-directive.directive';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FormsBasicComponent } from './components/forms-basic/forms-basic.compon
     HaloComponent,
     HaloVehiclesComponent,
     FormsBasicComponent,
+    MyDirectiveDirective,
   ],
   imports: [
     BrowserModule,
