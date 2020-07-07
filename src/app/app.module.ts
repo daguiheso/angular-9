@@ -17,6 +17,8 @@ import { TransformTextPipe } from './pipes/transform-text.pipe';
 import { SortPipe } from './pipes/sort.pipe';
 import { SortByPipe } from './pipes/sort-by.pipe';
 import { PipesComponent } from './components/pipes/pipes.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { AnimalsComponent } from './components/animals/animals.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { PipesComponent } from './components/pipes/pipes.component';
     SortPipe,
     SortByPipe,
     PipesComponent,
+    ProfileComponent,
+    AnimalsComponent,
   ],
   imports: [
     BrowserModule,

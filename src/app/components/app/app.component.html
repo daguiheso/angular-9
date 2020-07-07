@@ -6,5 +6,18 @@
 <!-- <app-forms-basic></app-forms-basic> -->
 <!-- <h2>Hola <span [appMyDirective]="true">Mundo</span></h2> -->
 <!-- <h2>Hola <span appMyDirective color="blue">Mundo</span></h2> -->
-<app-pipes></app-pipes>
+<!-- <app-pipes></app-pipes> -->
 
+<input type="text" [ngModel]="valueI | uppercase" (ngModelChange)="valueI=$event">
+
+<p>{{percentA | percent}}</p>
+<p>{{percentB}}</p>
+
+<p>currency</p>
+<p>{{percentA | currency}}</p>
+<p>{{percentA | currency:'USD'}}</p>
+
+<p>decimal pipe</p>
+<p>{{e}}</p>
+<p>{{pi}}</p>
+<p>{{pi | number:'2.4'}}</p>

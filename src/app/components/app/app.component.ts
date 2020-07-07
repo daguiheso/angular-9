@@ -8,4 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent {
   title = 'angular 9';
   usuario = [];
+  valueI: '';
+  percentA = 0.259;
+  percentB = 1.3495;
+  pi = 3.14;
+  e = 2.718281828459045;
 }
